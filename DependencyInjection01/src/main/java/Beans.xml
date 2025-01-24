@@ -5,12 +5,20 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
+    <!-- Setter 
+    <bean id="source" class=" com.demo.Laptop" ></bean>
+    <bean id="bbc" class="com.demo.Tab"></bean>
+    <bean id=" student" class="com.demo.Student" autowire="byName">
+    -->
+    
+    <!--
+     <bean id="sorce" class=" com.demo.Laptop"  ></bean>
+    <bean id="source" class="com.demo.Tab" primary="true"></bean>
+    <bean id=" student" class="com.demo.Student" autowire="byType">
+    -->
+    <bean id="source" class=" com.demo.Laptop"  ></bean>
+    <bean id="source1" class="com.demo.Tab" primary="true"></bean>
+    <bean id=" student" class="com.demo.Student" autowire="constructor">
+  </bean>
    
-    
-     <bean id="Student" class="com.athul.Student" autowire="byType" > </bean>
-    
-    <bean id="souce" class="com.athul.Laptop"  ></bean>
-    <bean id="soure" class="com.athul.Tab"  primary="true"></bean>
-  
-
 </beans>
